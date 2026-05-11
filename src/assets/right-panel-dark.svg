@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 900" width="400" height="900">
+  <rect width="400" height="900" fill="#0f1c13"/>
+
+  <!-- Background subtle large circle atmosphere -->
+  <circle cx="320" cy="200" r="180" fill="#121f16" opacity="0.8"/>
+  <circle cx="100" cy="700" r="140" fill="#121f16" opacity="0.6"/>
+
+  <!-- Main branch: thick sinuous stem -->
+  <path d="M260 900 C255 840 248 780 244 720 C240 660 238 600 242 540 C246 480 255 420 252 360 C249 300 240 250 245 190 C250 130 262 80 268 20" fill="none" stroke="#3d6e4d" stroke-width="2"/>
+
+  <!-- Secondary thin branch splitting off mid -->
+  <path d="M244 540 C225 520 200 505 178 490" fill="none" stroke="#2d5c3a" stroke-width="1.2"/>
+  <path d="M178 490 C168 480 156 468 148 455 C162 456 176 468 178 490Z" fill="#1e3d28" opacity="0.9"/>
+
+  <!-- LEAVES LEFT SIDE - large -->
+  <path d="M244 720 C218 705 192 692 172 676 C194 670 222 685 244 720Z" fill="#1e3d28" opacity="0.95"/>
+  <path d="M244 720 C220 708 198 698 178 684" fill="none" stroke="#2d5c3a" stroke-width="0.6"/>
+
+  <path d="M242 650 C216 632 192 618 170 600 C194 596 220 612 242 650Z" fill="#264d34" opacity="0.9"/>
+  <path d="M242 650 C218 636 196 624 174 608" fill="none" stroke="#3a6e49" stroke-width="0.6"/>
+
+  <path d="M242 580 C218 562 196 548 175 532 C198 530 222 545 242 580Z" fill="#1e3d28" opacity="0.9"/>
+
+  <path d="M246 500 C222 480 202 466 182 450 C204 450 226 466 246 500Z" fill="#264d34" opacity="0.85"/>
+
+  <path d="M249 430 C227 410 208 396 188 380 C210 382 230 396 249 430Z" fill="#1e3d28" opacity="0.85"/>
+
+  <path d="M251 360 C230 340 212 327 193 312 C214 315 234 328 251 360Z" fill="#264d34" opacity="0.8"/>
+
+  <path d="M250 290 C231 270 215 258 197 244 C216 248 235 260 250 290Z" fill="#1e3d28" opacity="0.75"/>
+
+  <path d="M248 220 C231 200 216 189 200 176 C218 181 235 192 248 220Z" fill="#264d34" opacity="0.75"/>
+
+  <path d="M248 155 C233 135 220 126 205 114 C221 120 237 130 248 155Z" fill="#1e3d28" opacity="0.7"/>
+
+  <!-- LEAVES RIGHT SIDE -->
+  <path d="M244 690 C268 673 290 660 310 646 C290 642 267 657 244 690Z" fill="#2d5c3a" opacity="0.9"/>
+  <path d="M244 690 C266 675 288 663 308 650" fill="none" stroke="#3a6e49" stroke-width="0.6"/>
+
+  <path d="M242 618 C265 600 286 586 305 571 C285 569 263 583 242 618Z" fill="#1e3d28" opacity="0.85"/>
+
+  <path d="M243 548 C265 529 285 515 304 500 C284 500 263 515 243 548Z" fill="#2d5c3a" opacity="0.85"/>
+
+  <path d="M247 475 C268 456 287 443 305 428 C285 430 266 444 247 475Z" fill="#1e3d28" opacity="0.8"/>
+
+  <path d="M249 405 C269 386 287 373 305 358 C286 362 268 375 249 405Z" fill="#2d5c3a" opacity="0.8"/>
+
+  <path d="M250 335 C269 317 287 304 304 290 C285 295 268 308 250 335Z" fill="#1e3d28" opacity="0.75"/>
+
+  <path d="M249 265 C267 247 284 236 300 222 C283 227 267 240 249 265Z" fill="#2d5c3a" opacity="0.7"/>
+
+  <path d="M248 196 C265 178 281 168 296 155 C280 161 265 172 248 196Z" fill="#1e3d28" opacity="0.7"/>
+
+  <!-- Leaf vein details (subtle) -->
+  <line x1="244" y1="720" x2="192" y2="678" stroke="#3a6e49" stroke-width="0.4" opacity="0.6"/>
+  <line x1="242" y1="650" x2="192" y2="608" stroke="#3a6e49" stroke-width="0.4" opacity="0.5"/>
+  <line x1="244" y1="690" x2="296" y2="650" stroke="#3a6e49" stroke-width="0.4" opacity="0.5"/>
+
+  <!-- Small hanging berries/buds -->
+  <circle cx="162" cy="678" r="4" fill="#1e3d28" opacity="0.8"/>
+  <circle cx="158" cy="600" r="3" fill="#264d34" opacity="0.7"/>
+  <circle cx="314" cy="648" r="3.5" fill="#1e3d28" opacity="0.7"/>
+  <circle cx="168" cy="532" r="3" fill="#264d34" opacity="0.6"/>
+
+  <!-- Horizontal accent lines -->
+  <line x1="0" y1="30" x2="400" y2="30" stroke="#1a3224" stroke-width="0.6"/>
+  <line x1="0" y1="870" x2="400" y2="870" stroke="#1a3224" stroke-width="0.6"/>
+  <line x1="0" y1="450" x2="160" y2="450" stroke="#1a3224" stroke-width="0.5"/>
+  <line x1="310" y1="450" x2="400" y2="450" stroke="#1a3224" stroke-width="0.5"/>
+</svg>

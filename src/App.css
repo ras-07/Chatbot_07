@@ -1,0 +1,305 @@
+.Overall-container{
+  display: flex;
+  justify-content: center; 
+  width: 100vw;
+  height: 100vh; /* Changed from min-height to height */
+  background-color:  #0D1C12; 
+  overflow: hidden; /* Prevents unwanted scrolling */
+  position: relative;     /* Prevents horizontal scroll */
+}
+.side-image {
+  position: absolute; /* Take them out of the flex flow */
+  top: 0;
+  bottom: 0;
+  width: calc((100vw - 600px) / 2); /* Calculates space left outside the chat */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+.side-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This forces the image to fill the entire panel */
+  opacity: 0.8; /* Optional: makes it blend better with the dark theme */
+}
+
+
+
+.app {
+  width: 600px;
+  height: 94vh;
+  z-index: 10; /* Ensures chat stays on top of the images */
+  background: #3A633F;
+  /* Remove margins as position: absolute handles the sides */
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  border-radius:8px;
+  overflow: hidden;
+  padding:0;
+}
+
+body{
+  font-family: Arial;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.input{
+  display:flex; 
+  margin-bottom:24px; 
+  margin-top:24px;
+  margin-left:4px;
+  margin-right:4px;
+ 
+}
+.logout-btn {
+  background-color: transparent; 
+  color: rgba(255, 255, 255, 0.6); /* Faded white/grey */
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 8px;
+  margin: 0 8px 12px 8px; /* Balanced margins */
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover transition */
+  align-self: center; /* Centers it in the flex container */
+}
+
+.logout-btn:hover {
+  background-color: rgba(200, 38, 10, 0.1); /* Very light red tint */
+  color: #ff6b6b; /* Soft red text */
+  border-color: #ff6b6b;
+}
+.in{  
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:8px;
+  padding-bottom:8px;
+  border-radius:6px;
+  border-width:0.4px;
+  font-size: 15px;
+  flex-grow:1;
+}
+
+.snd
+{
+  background-color: #198754; 
+  color:white;
+  padding-bottom:8px;
+  padding-top:8px;
+  padding-left:12px;
+  padding-right:12px;
+  border:none;
+  border-radius:8px;
+  margin-left:8px;
+  font-size:12px;
+  cursor: pointer;
+}
+
+.msg_user
+{
+  margin-top:10px;
+  margin-bottom:10px;
+  display:flex;
+  flex-direction:row;
+  justify-content:end;
+  align-items:center;
+  left:0px;
+}
+.msg_bot
+{
+  margin-top:10px;
+  margin-bottom:10px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:start;
+  right:0px;
+}
+.msg_user, .msg_bot {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+p{
+  background-color:#eee;
+  margin-left:12px;
+  margin-right:12px;
+  padding-bottom:12px;
+  padding-top:12px;
+  padding-left:16px;
+  padding-right:16px;
+  border:none;
+  border-radius:8px;
+  max-width: 300px;
+}
+.chat_msg_profile{
+  width:45px;
+}
+.msg_comp{
+  display:flex;
+  flex-grow:1;
+  overflow:auto;
+  padding:0;
+  margin:0;
+  
+  flex-direction: column;
+  
+
+  /* 1. The Overlay: This makes the image 85% white so text is clear */
+  /* 2. The URL: Replace 'your-bg-image.jpg' with your actual filename */
+   background-image: url('./assets/chat-bg-light.svg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local; /* Background scrolls with messages */
+  
+}
+.w1 {
+  width: fit-content;      /* Makes the width wrap around the text */
+  min-width: 150px;        /* Ensures it doesn't get too small */
+  text-align: center;
+  margin: 0 auto;          /* Centers it horizontally */
+  z-index: 5;
+  
+  /* Color and Shape */
+  background-color: #a5c993;
+  color: #0D1C12;          /* Dark green text for high readability */
+  padding: 10px 25px;      /* Vertical and Horizontal internal spacing */
+  border-radius: 0 0 20px 20px; /* Rounds only the bottom corners */
+  
+  /* Typography */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 800;        /* Use numeric weight for better control */
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Makes "ChatBot" look like a brand logo */
+
+  /* Depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.insta-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #163107;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.auth-box {
+  background: #a5c993;
+  border-radius:10px;
+  border: 10px solid ;
+  width: 350px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+ 
+}
+
+.brand-logo {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  background: #fafafa;
+  border: 1px solid ;
+  border-radius: 3px;
+  padding: 9px 7px;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.login-button {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  font-weight: 600;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 18px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.or-text {
+  margin: 0 18px;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.google-login-btn {
+  background: none;
+  border: none;
+  color: #385185;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.google-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.forgot-password {
+  font-size: 12px;
+  color: #00376b;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.signup-box {
+  background:   #a5c993;
+  border: 10px solid ;
+  border-radius:10px;
+  width: 350px;
+  padding: 10px 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-box a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: 600;
+}
