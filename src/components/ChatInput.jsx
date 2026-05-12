@@ -3,7 +3,7 @@ import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Initialize Gemini (Replace with your actual API key)
-const genAI = new GoogleGenerativeAI("AIzaSyDkkkK0n8mbOYo9g4T7loarFvikFwSS2dQ");
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 const systemInstruction = `
   You are a concise AI assistant. 
   - Never use placeholders like [Insert Actual Temp].

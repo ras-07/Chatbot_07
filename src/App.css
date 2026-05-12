@@ -203,7 +203,8 @@ p{
 .auth-box {
   background: #a5c993;
   border-radius:10px;
-  border: 10px solid ;
+  border: 1px solid #7a9c6a ;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Adds modern depth */
   width: 350px;
   padding: 20px 40px;
   display: flex;
@@ -226,8 +227,8 @@ p{
 }
 
 .login-form input {
-  background: #fafafa;
-  border: 1px solid ;
+  background: #f1f8ee;
+  border: 1px solid #c0d8b6;
   border-radius: 3px;
   padding: 9px 7px;
   margin-bottom: 6px;
@@ -290,7 +291,8 @@ p{
 
 .signup-box {
   background:   #a5c993;
-  border: 10px solid ;
+  border: 1px solid #7a9c6a ;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Adds modern depth */
   border-radius:10px;
   width: 350px;
   padding: 10px 40px;
