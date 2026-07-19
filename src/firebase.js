@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth"; // Import the Auth service
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAHrEtt6FI5mnZksau5UJzMqVBklqTgCac",
+  apiKey:import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "chatbot-5596d.firebaseapp.com",
   projectId: "chatbot-5596d",
   storageBucket: "chatbot-5596d.firebasestorage.app",
