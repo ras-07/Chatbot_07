@@ -47,7 +47,7 @@ function App() {
 
   function Welcome({ messages }) {
     if (messages.length === 0) {
-      return <p className='w1'>AI Analytics Engine</p>;
+      return <p className='w1'>Trace AI</p>;
     }
     return null;
   }

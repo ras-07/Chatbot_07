@@ -43,7 +43,7 @@ const Login = () => {
     <div className="insta-login-container">
       <div className="auth-box">
         {/* Dynamic Title */}
-        <h1 className="brand-logo">{isSignup ? "Create Account" : "Chatbot"}</h1>
+        <h1 className="brand-logo">{isSignup ? "Create Account" : "Trace AI"}</h1>
         
         <form onSubmit={handleSubmit} className="login-form">
           <input 
